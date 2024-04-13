@@ -19,7 +19,7 @@ const { title } = Astro.props;
   <body class="bg-slate-100">
     <div class="bg-white h-14 flex items-center">
       <header class="flex justify-between container">
-        <div class="flex items-center space-x-4"> 
+        <div class="flex items-center space-x-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -41,19 +41,37 @@ const { title } = Astro.props;
         </div>
         <menu class="space-x-4">
           <ul class="space-x-5">
-            <li class="inline-block border-b-2 border-dotted hover:text-red-500">
+            <li
+              class="inline-block border-b-2 border-dotted hover:text-red-500"
+            >
               <a href="#">Home</a>
             </li>
-            <li class="inline-block hover:text-red-500"><a href="#">Service</a></li>
-            <li class="inline-block hover:text-red-500"><a href="#">Packages</a></li>
-            <li class="inline-block hover:text-red-500"><a href="#">Coverage</a></li>
-            <li class="inline-block hover:text-red-500"><a href="#">Pay Bill</a></li>
-            <li class="inline-block hover:text-red-500"><a href="#">Offers</a></li>
-            <li class="inline-block hover:text-red-500"><a href="#">Support</a></li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Service</a>
+            </li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Packages</a>
+            </li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Coverage</a>
+            </li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Pay Bill</a>
+            </li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Offers</a>
+            </li>
+            <li class="inline-block hover:text-red-500">
+              <a href="#">Support</a>
+            </li>
           </ul>
         </menu>
-        <div class="flex space-x-4 items-center bg-red-500 rounded-lg shadow-sm px-2 py-1 text-white font-semibold text-sm hover:bg-red-600">
-          <a href="https://youtu.be/c_vJT2_vFIo?si=kbHFCRVM-Q0zwG1W">Get started</a>
+        <div
+          class="flex space-x-2 items-center bg-red-500 rounded-lg shadow-sm px-1 py-1 text-white font-semibold text-sm hover:bg-red-600"
+        >
+          <a href="https://youtu.be/c_vJT2_vFIo?si=kbHFCRVM-Q0zwG1W"
+            >Get started</a
+          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -68,11 +86,11 @@ const { title } = Astro.props;
               d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
           </svg>
         </div>
-      </header>      
+      </header>
     </div>
     <!-- Contenido -->
-    <div class="mx-auto w-full grid grid-cols-2">
-      <div class="bg-slate-100 justify-start h-96 ml-16">
+    <div class="mx-auto w-full grid grid-cols-2 static">
+      <div class="bg-slate-100 justify-start h-96 mx-auto static">
         <h1 class="font-bold text-5xl w-3/5 items-center mt-28 block">
           Start With Fast <span class="text-red-600">Netcom</span>
         </h1>
@@ -83,9 +101,16 @@ const { title } = Astro.props;
           <a href="https://youtu.be/SN-YmcUHmqU?si=1zLSCR0GuzyJRG1j">Start</a>
         </div>
       </div>
-      <div class="bg-[url('https://cdn.pixabay.com/photo/2020/02/16/20/29/nyc-4854718_1280.jpg')] bg-cover bg-center relative rounded-md">
+      <div class="bg-[url('https://cdn.pixabay.com/photo/2020/02/16/20/29/nyc-4854718_1280.jpg')] bg-cover bg-center relative">
         <div class="absolute inset-0 bg-gradient-to-r from-slate-100 to-transparent">
         </div>
+      </div>
+      <div class="w-10/12 mx-auto mb-12 h-32 absolute bottom-0 left-0 right-0 top-96 mt-8 grid grid-cols-5">
+        <h6 class="flex justify-center bg-blue-500">Text</h6>
+        <h6 class="flex justify-center bg-red-500">Text</h6>
+        <h6 class="flex justify-center bg-yellow-500">Text</h6>
+        <h6 class="flex justify-center bg-green-500">Text</h6>
+        <h6 class="flex justify-center bg-pink-500">Text</h6>
       </div>
     </div>
     <slot />
